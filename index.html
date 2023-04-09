@@ -114,9 +114,10 @@ order.addEventListener('click', () => {
         document.getElementById("error").innerText = "Помилка в телефоні";
         return;
     }
-    let data = {name:name,
-     email:email,
-     phone:phone}
+    let data = {
+    name:name,
+    email:email,
+    phone:phone}
     tg.sendData(JSON.stringify(data));
       
 
